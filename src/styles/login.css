@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+
+    width:100%;
+    height:100vh;
+
+}
+
+.container{
+
+    display:flex;
+
+    width:100%;
+    height:100vh;
+
+}
+
+/*==========================
+        LOGIN
+==========================*/
+
+.left{
+
+    width:50%;
+
+    background:linear-gradient(135deg,#021B3A,#003566,#0A5FA8);
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    padding:60px;
+
+}
+
+.login-box{
+
+    width:100%;
+    max-width:430px;
+
+    color:white;
+
+}
+
+.login-box h1{
+
+    font-size:46px;
+
+    color:#7BE7FF;
+
+    margin-bottom:45px;
+
+}
+
+.login-box h2{
+
+    font-size:42px;
+
+    margin-bottom:10px;
+
+}
+
+.login-box p{
+
+    color:#d9ecff;
+
+    margin-bottom:40px;
+
+    font-size:18px;
+
+}
+
+
+/*==========================
+        INPUTS
+==========================*/
+
+.input-box{
+
+    width:100%;
+    height:60px;
+
+    background:white;
+
+    border-radius:14px;
+
+    display:flex;
+    align-items:center;
+
+    margin-bottom:22px;
+
+    overflow:hidden;
+
+    box-shadow:0 0 20px rgba(255,255,255,.08);
+
+}
+
+.input-box i{
+
+    width:60px;
+
+    text-align:center;
+
+    color:#4b6c91;
+
+    font-size:18px;
+
+}
+
+.input-box input{
+
+    flex:1;
+
+    height:100%;
+
+    border:none;
+
+    outline:none;
+
+    font-size:16px;
+
+    color:#234;
+
+}
+
+.input-box input::placeholder{
+
+    color:#7a8ca3;
+
+}
+
+/*==========================
+      OPÇÕES
+==========================*/
+
+.options{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin:25px 0 35px;
+
+}
+
+.options label{
+
+    display:flex;
+
+    gap:8px;
+
+    align-items:center;
+
+    color:#dbefff;
+
+}
+
+.options input{
+
+    accent-color:#6fdcff;
+
+}
+
+.options a{
+
+    color:#72e9ff;
+
+    text-decoration:none;
+
+}
+
+.options a:hover{
+
+    text-decoration:underline;
+
+}
+
+/*==========================
+        BOTÃO
+==========================*/
+
+button{
+
+    width:100%;
+
+    height:58px;
+
+    border:none;
+
+    border-radius:14px;
+
+    background:linear-gradient(90deg,#4FC3F7,#38D9A9);
+
+    color:white;
+
+    font-size:19px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+    box-shadow:0 10px 30px rgba(79,195,247,.35);
+
+}
+
+button:hover{
+
+    transform:translateY(-2px);
+
+    box-shadow:0 15px 35px rgba(79,195,247,.5);
+
+}
+
+/*==========================
+      CADASTRO
+==========================*/
+
+.cadastro{
+
+    text-align:center;
+
+    margin-top:30px;
+
+    color:#d7e8ff;
+
+}
+
+.cadastro a{
+
+    color:#6fe7ff;
+
+    font-weight:600;
+
+    text-decoration:none;
+
+}
+
+.cadastro a:hover{
+
+    text-decoration:underline;
+
+}
+
+
+/*==========================
+        IMAGEM
+==========================*/
+
+.right{
+
+    width:50%;
+
+    overflow:hidden;
+
+}
+
+.right img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    transition:.5s;
+
+}
+
+.right:hover img{
+
+    transform:scale(1.03);
+
+}
+
+
+/*==========================
+      RESPONSIVO
+==========================*/
+
+@media(max-width:900px){
+
+.container{
+
+    flex-direction:column;
+
+}
+
+.left{
+
+    width:100%;
+    height:65%;
+
+}
+
+.right{
+
+    width:100%;
+    height:35%;
+
+}
+
+.login-box{
+
+    max-width:90%;
+
+}
+
+.login-box h1{
+
+    font-size:38px;
+
+}
+
+.login-box h2{
+
+    font-size:32px;
+
+}
+
+}

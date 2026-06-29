@@ -1,0 +1,96 @@
+import "../styles/cadastro.css";
+import arara from "../assets/arara.jpg";
+
+function Cadastro() {
+    return (
+        <>
+            <section className="left">
+
+                <div className="container">
+
+                    <div className="logo">
+                        🌿 ECOAÇÃO
+                    </div>
+
+                    <h1>Criar Conta</h1>
+
+                    <p>
+                        Faça parte da nossa comunidade e contribua para um futuro
+                        mais sustentável.
+                    </p>
+
+                    <form>
+
+                        <div className="input-box">
+                            <label>Nome completo</label>
+
+                            <input
+                                type="text"
+                                placeholder="Digite seu nome"
+                                required
+                            />
+                        </div>
+
+                        <div className="input-box">
+                            <label>E-mail</label>
+
+                            <input
+                                type="email"
+                                placeholder="Digite seu e-mail"
+                                required
+                            />
+                        </div>
+
+                        <div className="input-box">
+                            <label>Senha</label>
+
+                            <input
+                                type="password"
+                                placeholder="Crie uma senha"
+                                required
+                            />
+                        </div>
+
+                        <div className="input-box">
+                            <label>Confirmar senha</label>
+
+                            <input
+                                type="password"
+                                placeholder="Repita sua senha"
+                                required
+                            />
+                        </div>
+
+                        <button type="submit">
+                            Criar Conta
+                        </button>
+
+                    </form>
+
+                    <div className="login">
+
+                        Já possui uma conta?
+
+                        <a href="/">
+                            Entrar
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section className="right">
+
+                <img
+                    src={arara}
+                    alt="Floresta"
+                />
+
+            </section>
+        </>
+    );
+}
+
+export default Cadastro;
