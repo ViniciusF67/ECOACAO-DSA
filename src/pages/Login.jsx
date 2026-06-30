@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "../styles/login.css";
 import urso from "../assets/urso.jpg";
 
@@ -67,9 +68,7 @@ function Login() {
 
                         Não possui uma conta?
 
-                        <a href="#">
-                            Cadastre-se
-                        </a>
+                        <Link to="/cadastro">Cadastre-se</Link>
 
                     </div>
 

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "../styles/cadastro.css";
 import arara from "../assets/arara.jpg";
 
@@ -71,9 +72,7 @@ function Cadastro() {
 
                         Já possui uma conta?
 
-                        <a href="/">
-                            Entrar
-                        </a>
+                        <Link to="/">Entrar</Link>
 
                     </div>
 
