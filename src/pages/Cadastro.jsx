@@ -4,10 +4,11 @@ import arara from "../assets/arara.jpg";
 
 function Cadastro() {
     return (
-        <>
-            <section className="left">
+        <div className="cadastro-container">
 
-                <div className="container">
+            <section className="cadastro-left">
+
+                <div className="cadastro-box">
 
                     <div className="logo">
                         🌿 ECOAÇÃO
@@ -22,7 +23,7 @@ function Cadastro() {
 
                     <form>
 
-                        <div className="input-box">
+                        <div className="cadastro-input-box">
                             <label>Nome completo</label>
 
                             <input
@@ -32,7 +33,7 @@ function Cadastro() {
                             />
                         </div>
 
-                        <div className="input-box">
+                        <div className="cadastro-input-box">
                             <label>E-mail</label>
 
                             <input
@@ -42,7 +43,7 @@ function Cadastro() {
                             />
                         </div>
 
-                        <div className="input-box">
+                        <div className="cadastro-input-box">
                             <label>Senha</label>
 
                             <input
@@ -52,7 +53,7 @@ function Cadastro() {
                             />
                         </div>
 
-                        <div className="input-box">
+                        <div className="cadastro-input-box">
                             <label>Confirmar senha</label>
 
                             <input
@@ -62,7 +63,7 @@ function Cadastro() {
                             />
                         </div>
 
-                        <button type="submit">
+                        <button className="cadastro-button" type="submit">
                             Criar Conta
                         </button>
 
@@ -80,7 +81,7 @@ function Cadastro() {
 
             </section>
 
-            <section className="right">
+            <section className="cadastro-right">
 
                 <img
                     src={arara}
@@ -88,7 +89,8 @@ function Cadastro() {
                 />
 
             </section>
-        </>
+
+        </div>
     );
 }
 

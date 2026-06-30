@@ -1,172 +1,230 @@
-/* RESET */
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Poppins",sans-serif;
 }
 
 body{
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    background: #0d1117;
-    color: #fff;
+    margin:0;
+    background:#0d1117;
+}
+
+.cadastro-container{
+
+    display:flex;
+
+    width:100%;
+    height:100vh;
+
+    background:#0d1117;
+    color:white;
+
 }
 
 /* ---------- LADO ESQUERDO ---------- */
 
-.left{
-    width: 50%;
-    height: 100vh;
+.cadastro-left{
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width:50%;
+    height:100%;
 
-    padding: 80px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    padding:80px;
+
 }
 
-.container{
-    width: 100%;
-    max-width: 430px;
+.cadastro-box{
+
+    width:100%;
+    max-width:430px;
+
 }
 
 .logo{
-    font-size: 2.8rem;
-    color: #66ff99;
-    margin-bottom: 10px;
+
+    font-size:2.8rem;
+    color:#66ff99;
+    margin-bottom:10px;
+
 }
 
-.container h1{
-    font-size: 2.3rem;
-    margin-bottom: 10px;
+.cadastro-box h1{
+
+    font-size:2.3rem;
+    margin-bottom:10px;
+
 }
 
-.container p{
-    color: #9fb4a4;
-    margin-bottom: 40px;
-    line-height: 24px;
+.cadastro-box p{
+
+    color:#9fb4a4;
+    margin-bottom:40px;
+    line-height:24px;
+
 }
 
-/* ---------- INPUTS ---------- */
+/* INPUTS */
 
-.input-box{
-    margin-bottom: 20px;
+.cadastro-input-box{
+
+    margin-bottom:20px;
+
 }
 
-.input-box label{
-    display: block;
-    margin-bottom: 8px;
-    color: #b6cbbd;
-    font-size: .95rem;
+.cadastro-input-box label{
+
+    display:block;
+
+    margin-bottom:8px;
+
+    color:#b6cbbd;
+
+    font-size:.95rem;
+
 }
 
-.input-box input{
-    width: 100%;
-    padding: 16px;
+.cadastro-input-box input{
 
-    background: rgba(255,255,255,.05);
+    width:100%;
 
-    border: none;
-    border-radius: 12px;
+    padding:16px;
 
-    color: white;
-    font-size: 15px;
+    background:rgba(255,255,255,.05);
 
-    transition: .3s;
+    border:none;
+    border-radius:12px;
+
+    color:white;
+    font-size:15px;
+
+    transition:.3s;
+
 }
 
-.input-box input:focus{
-    outline: none;
+.cadastro-input-box input:focus{
 
-    background: rgba(255,255,255,.08);
+    outline:none;
 
-    box-shadow: 0 0 15px rgba(102,255,153,.25);
+    background:rgba(255,255,255,.08);
+
+    box-shadow:0 0 15px rgba(102,255,153,.25);
+
 }
 
-/* ---------- BOTÃO ---------- */
+/* BOTÃO */
 
-button{
-    width: 100%;
-    padding: 16px;
+.cadastro-button{
 
-    margin-top: 15px;
+    width:100%;
 
-    background: linear-gradient(135deg,#2ecc71,#27ae60);
+    padding:16px;
 
-    color: white;
-    border: none;
+    margin-top:15px;
 
-    border-radius: 12px;
+    background:linear-gradient(135deg,#2ecc71,#27ae60);
 
-    font-size: 16px;
-    font-weight: 600;
+    color:white;
 
-    cursor: pointer;
+    border:none;
+    border-radius:12px;
 
-    transition: .3s;
+    font-size:16px;
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
 }
 
-button:hover{
-    transform: translateY(-2px);
+.cadastro-button:hover{
 
-    box-shadow: 0 10px 30px rgba(46,204,113,.35);
+    transform:translateY(-2px);
+
+    box-shadow:0 10px 30px rgba(46,204,113,.35);
+
 }
 
-/* ---------- LOGIN ---------- */
+/* LOGIN */
 
 .login{
-    margin-top: 25px;
-    text-align: center;
-    color: #8fa595;
+
+    margin-top:25px;
+
+    text-align:center;
+
+    color:#8fa595;
+
 }
 
 .login a{
-    color: #66ff99;
-    text-decoration: none;
-    font-weight: 600;
+
+    color:#66ff99;
+
+    text-decoration:none;
+
+    font-weight:600;
+
 }
 
 .login a:hover{
-    text-decoration: underline;
+
+    text-decoration:underline;
+
 }
 
-/* ---------- LADO DIREITO ---------- */
+/* IMAGEM */
 
-.right{
-    width: 50%;
-    height: 100vh;
+.cadastro-right{
 
-    overflow: hidden;
+    width:50%;
+    height:100%;
+
+    overflow:hidden;
+
 }
 
-.right img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.cadastro-right img{
+
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+
 }
 
-/* ---------- RESPONSIVO ---------- */
+/* RESPONSIVO */
 
 @media(max-width:900px){
 
-    body{
-        flex-direction: column-reverse;
+    .cadastro-container{
+
+        flex-direction:column-reverse;
+
     }
 
-    .left,
-    .right{
+    .cadastro-left,
+    .cadastro-right{
+
         width:100%;
+
     }
 
-    .right{
+    .cadastro-right{
+
         height:35vh;
+
     }
 
-    .left{
+    .cadastro-left{
+
         height:65vh;
         padding:40px;
+
     }
 
 }

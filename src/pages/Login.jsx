@@ -4,7 +4,7 @@ import urso from "../assets/urso.jpg";
 
 function Login() {
     return (
-        <div className="container">
+        <div className="login-container">
 
             {/* LOGIN */}
 

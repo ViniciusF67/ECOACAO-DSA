@@ -14,7 +14,7 @@ body{
 
 }
 
-.container{
+.login-container{
 
     display:flex;
 
@@ -291,7 +291,7 @@ button:hover{
 
 @media(max-width:900px){
 
-.container{
+.login-container{
 
     flex-direction:column;
 
